@@ -39,11 +39,11 @@ eux afin d'avoir toutes leurs dépendances.</p>
 <p>
 Pour utiliser le couplage faible, nous devons utiliser les interfaces.
 Considérons une classe DaoImpl qui implémente l'interface IDao, et une classe MetierImpl qui implémente l'interface IMetier.</p>
-<p>Si la classe MetierImpl est liée à l’interface IDao par une association, on dit que le classe A et la classe B sont liées par un
+<p>Si la classe MetierImpl est liée à l’interface IDao par une association, on dit que le classe MetierImpl et la classe IDaoImpl sont liées par un
 couplage faible.</p>
 <p>Cela signifie que la classe MetierImpl peut fonctionner avec n’importe quelle classe qui implémente l’interface IDao.
 En effet la classe MetierImpl ne connait que l’interface IDao. De ce fait n’importe quelle classe implémentant cette
-interface peut être associée à la classe B, sans qu’il soit nécessaire de modifier quoi que se soit dans la
+interface peut être associée à la classe MetierImpl, sans qu’il soit nécessaire de modifier quoi que se soit dans la
 classe MetierImpl.</p>
 <p>Avec le couplage faible, nous pourrons créer des applications fermées à la modification et ouvertes à
 l’extension.
