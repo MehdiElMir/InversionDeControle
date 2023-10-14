@@ -1,5 +1,10 @@
 <h1 style="color: cornflowerblue">Rapport de l'inversion de contrôle et l'injection des dépendances</h1>
 <h2 style="color: cadetblue">Introduction</h2>
+<p>IoC (Inversion of control), est un processus qui définit les dépendances d'un objet sans 
+avoir à les créer. C'est lors de la création des objets, que Spring va injecter les Beans entre 
+eux afin d'avoir toutes leurs dépendances.</p>
+<p>Cela va aider le développeur la possibilité de se focaliser sur la partie Métier de l'application</p>
+<p>Spring va s'occuper de l'injection des dépandences et toutes les fonctionnalités techniques</p>
 <h2 style="color: cadetblue">Ennoncé</h2>
 <ol>
     <li>Couche DAO 
@@ -63,3 +68,10 @@ l’extension.
 <p>On doit installer en premier lieu les dépandences, ensuite ajouter un fichier config.xml</p>
 <img src="captures/config_xml.png" alt="config.xml">
 <img src="captures/Spring_xml.png" alt="spring version xml">
+<h3>Injection des dépendances en utilisant Spring version annotations</h3>
+<p>Repository Class</p>
+<img src="captures/Repository.png" alt="repository class">
+<p>Service Class</p>
+<img src="captures/Service.png" alt="service">
+<p>Controller</p>
+<img src="captures/pres4_annota.png" alt="i">

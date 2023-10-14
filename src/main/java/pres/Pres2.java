@@ -24,12 +24,12 @@ public class Pres2 {
         //MetierImpl metier = new MetierImpl();
         String metierClassName = scanner.nextLine();
         Class cMetier = Class.forName(metierClassName);
-        IMetier metier = (IMetier) cMetier.getConstructor().newInstance();
+        IMetier metier = (IMetier) cMetier.getConstructor(IDao.class).newInstance(dao);
 
 
         //metier.setDao(dao);
-        Method setDao = cMetier.getDeclaredMethod("setDao",IDao.class);
-        setDao.invoke(metier, dao); //injection des dépendances
+        //Method setDao = cMetier.getDeclaredMethod("setDao",IDao.class);
+        //setDao.invoke(metier, dao); //injection des dépendances
 
         System.out.println("Res" +metier.calcul());
 
